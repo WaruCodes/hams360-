@@ -1,0 +1,171 @@
+/* Container styles */
+.container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.h1{
+  font-size: 3.2rem;
+}
+
+.search-bar-container {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  border-color: #1848e6;
+}
+
+.search-bar-container input {
+  padding: 0.7rem;
+  font-size: 1rem;
+  border: 1px solid #c2cef7;
+  border-radius: 5px;
+  width: 250px;
+}
+
+/* Grid layout for the cards */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+/* grid image */
+.grid_image{
+  border-radius: 5%;
+  opacity: unset;
+  
+}
+.grid_image:hover{
+ 
+}
+.card:hover{
+  transform: scale(1.05); 
+}
+
+/* Card styles */
+.card, .add-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+
+}
+
+.card:hover, .add-card {
+  background-color: #f2f8ff;
+  transform: scale(1.05); /* Slightly enlarges the button */
+  
+}
+
+.card img, .add-card img {
+  max-width: 100%;
+  height: auto;
+}
+
+.card .p1 {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-size: 1rem;
+}
+.card .p2 {
+  margin-top: 10px;
+  margin-bottom: 40px;
+  font-size: 1rem;
+}
+
+
+/* "See More" button styles */
+.see-more-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.see-more-button {
+  padding: 0.7rem 1.5rem;
+  background-color: #344456;
+  opacity: 0.4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  width: 10rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.see-more-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05); /* Slightly enlarges the button */
+}
+
+/* Add card styling */
+.add-card {
+  background-color: #f8f9fa;
+  border: 1px dashed #007bff;
+  cursor: pointer;
+}
+
+.add-card:hover {
+  background-color: #e2e6ea;
+  border: 1px solid #007bff;
+}
+
+/* Add New Card Button Styling */
+.add-card-container {
+  text-align: right;
+  margin-top: 40px; /* Adjusted for spacing */
+  margin-bottom: 20px;
+}
+
+.add-card-button {
+  padding: 15px 30px;
+  margin-right: 5px;
+  background-color:  #0056b3;
+  opacity: 0.8;
+  color: white;
+  border: none;
+  border-radius: 30px; 
+  cursor: pointer;
+  font-size: 1rem;
+  
+}
+
+.add-card-button:hover {
+  background-color: #061954;
+  transform: scale(1.05); /* Slightly enlarges on hover */
+}
+
+.add-card-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(49, 0, 244, 0.5); /* Green glow on focus */
+}
+
+/* Fade-in animation for Add Card button */
+.add-card-button {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
