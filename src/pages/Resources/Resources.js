@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Resources.css";
 import Image from "../../assets/resource_section.png";
-import AddCard from "../../components/AddCard/AddCard";
-import EditCard from "../../components/EditCard/EditCard";
+
 
 const Resources = () => {
   const [images, setImages] = useState([
@@ -139,7 +138,7 @@ const Resources = () => {
     // Find the selected image using the id
     const selectedImage = images.find((image) => image.id === imageId);
     if (selectedImage) {
-      navigate("/edit-card", { state: selectedImage }); // Pass data using the `state` property
+      navigate("/edit-card", { state: selectedImage });
     }
   };
 
