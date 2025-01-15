@@ -1,0 +1,88 @@
+/* Background container adjustments */
+.content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('../../../public/images/Hospital_old.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.background-wrapper {
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    color: #3498db;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.notification-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    max-width: 850px;
+    width: 100%;
+    border-radius: 8px;
+}
+  h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .notification-list {
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  
+  .notification-item {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .notification-item h4 {
+    font-size: 1.2rem;
+    margin: 0;
+    color: #3498db;
+  }
+  
+  .notification-item p {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 5px;
+  }
+  
+  .view-details-link {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #3498db;
+    text-decoration: none;
+  }
+  
+  .view-details-link:hover {
+    text-decoration: underline;
+  }
+  
+
+  .notification-container .home-button {
+    display: inline-flex; /* Use inline-flex for proper alignment with icon */
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #3498db; /* Blue button */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    margin-left: -700px;
+}
+
+
+.notification-container .home-button:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+}

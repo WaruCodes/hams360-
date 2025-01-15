@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-function App() {
+import HomePage from './pages/Home/homePage';
+import SignUp from './components/SignUp/SignUp';
+import Notification from './pages/Notification/Notification';
+import NotificationDetails from "./pages/Notification/NotificationDetails";
+import { AuthProvider } from './AuthContext';
+
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AuthProvider>
+      <Router>
+
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/signup" element={<SignUp />} />
+          <Route path="/notifications" element={<Notification />} />
+          <Route path="/notification/:id" element={<NotificationDetails />} />  {/* Dynamic route */}
+          {/* <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/resources" element={<Resources />} />
+          <Route path="/report" element={<Report />} /> */}
+        </Routes>
+      </Router>
+    </AuthProvider>
   );
-}
+};
 
 export default App;
