@@ -1,0 +1,49 @@
+.login-form {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;  /* Limit the form width */
+    width: 100%;
+    margin: 20px auto;  /* Center the form */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;  /* Increase space between form elements */
+    box-sizing: border-box; /* Prevent padding overflow */
+  }
+  
+  input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin: 8px 0; /* Space between input fields */
+    font-size: 1em;
+    box-sizing: border-box; /* Ensure padding doesn't cause overflow */
+  }
+  
+  button {
+    padding: 12px;
+    background-color: #3498db;  /* Blue button color */
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+  }
+  
+  button:hover {
+    background-color: #2980b9;  /* Darken button color on hover */
+  }
+  
+  .button-group {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  @media (max-width: 768px) {
+    .login-form {
+      max-width: 90%;
+      padding: 15px;  /* Reduce padding on smaller screens */
+    }
+  }

@@ -1,27 +1,38 @@
 import React from 'react';
+import Navbar from "../../components/Nav/Navbar"; // Ensure the correct path to the Navbar component
+import LoginForm from '../../components/LoginForm/LoginForm';
 
 import "./Home.css";
-import Layout from "../../components/Layout/Layout";
-import Nav from "../../components/Nav/Nav";
-import Dashboard from "../../pages/Dashboard/Dashboard";
-import Reports from "../../pages/Reports/Reports";
-import Notification from "../../pages/Notification/Notification";
-import Resources from "../../pages/Resources/Resources";
-import LandingPage from "../../pages/Landing_Page/Landing_Page"; // Rename to PascalCase
 
-function Home() {
+const Home = () => {
   return (
-    <div>
-        <Layout>
-            <Nav />    
-            <LandingPage /> {/* Use PascalCase */}
-            <Dashboard />  
-            <Reports />  
-            <Notification /> 
-            <Resources /> 
-        </Layout>
+    <div className="app-container">
+      <div className="sidebar">
+        <Navbar />
+      </div>
+      <div className="content-container">
+        <div
+          style={{
+            backgroundImage: `url('/images/Hospital_old.jpg')`,
+            backgroundSize: "cover",
+            height: "100%",
+            width: "100%",
+            color: "white",
+            padding: "50px",
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            textAlign: "center"
+          }}
+        >
+          <h1>Hospital Asset Management<br></br> System</h1>
+          <h2 style={{ color: 'white' }}>Pambahinna Divisional Hospital Belihuloya</h2>
+
+          <LoginForm />
+        </div>
+      </div>
     </div>
-  )
-}
+  );
+};
 
 export default Home;

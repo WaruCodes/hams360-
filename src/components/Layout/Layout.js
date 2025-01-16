@@ -1,14 +1,12 @@
-import React from 'react'
-import { Nav } from 'react-bootstrap';
+import React from 'react';
+import './Layout.css';
 
-
-
-function Layout({children}) {
+const Layout = ({ children }) => {
   return (
-    <div>
+    <div className="layout">
       {children}
     </div>
-  )
-}
+  );
+};
 
 export default Layout;

@@ -40,7 +40,8 @@
   
 }
 .grid_image:hover{
- 
+  border-radius: 5%;
+  opacity: unset;
 }
 .card:hover{
   transform: scale(1.05); 
@@ -126,9 +127,8 @@
 
 /* Add New Card Button Styling */
 .add-card-container {
-  text-align: right;
-  margin-top: 40px; /* Adjusted for spacing */
-  margin-bottom: 20px;
+  text-align: center;
+  margin-top: 20px;
 }
 
 .add-card-button {

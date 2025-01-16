@@ -2,11 +2,10 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Resources.css";
 import Image from "../../assets/resource_section.png";
-import AddCard from "../../components/AddCard/AddCard";
-import EditCard from "../../components/EditCard/EditCard";
+import RTable from '../../components/R_Table/R_Table'; // Ensure correct import
 
 const Resources = () => {
-  const [images, setImages] = useState([
+  const [images] = useState([
     // your image data...
     { 
       id: 1, 
@@ -149,11 +148,6 @@ const Resources = () => {
     );
   });
 
-    // Handle View button to navigate to R_Table (hospital department table)
-    const handleViewButtonClick = (sectionName) => {
-      navigate(`/view-table/${sectionName}`); // Navigate to R_Table with section as a param
-    };
-
   return (
     <div className="container">
       <h1 className="h1">Resource Section</h1>
@@ -176,7 +170,7 @@ const Resources = () => {
 
       {/* Image Grid */}
       <div className="grid">
-        {(showAll ? filteredImages : filteredImages.slice(0, 13)).map((image, index) => (
+        {(showAll ? filteredImages : filteredImages.slice(0, 11)).map((image, index) => (
           <div
             key={image.id}
             className="card"
@@ -187,16 +181,16 @@ const Resources = () => {
             <p className="p1">{image.section}</p> {/* Section name */}
           </div>
         ))}
-
-        {/* Show the "See More" / "Show Less" button */}
-        {filteredImages.length > 13 && (
-          <div className="see-more-container">
-            <button className="see-more-button" onClick={() => setShowAll(!showAll)}>
-              {showAll ? "Show Less <<" : "See More >>"}
-            </button>
-          </div>
-        )}
       </div>
+
+      {/* Show the "See More" / "Show Less" button */}
+      {filteredImages.length > 11 && (
+        <div className="see-more-container">
+          <button className="see-more-button" onClick={() => setShowAll(!showAll)}>
+            {showAll ? "Show Less <<" : "See More >>"}
+          </button>
+        </div>
+      )}
 
       {/* Add Card Button */}
       <div className="add-card-container">
@@ -204,6 +198,8 @@ const Resources = () => {
           Add Section
         </button>
       </div>
+
+      <RTable /> {/* Ensure RTable is rendered here */}
     </div>
   );
 };
