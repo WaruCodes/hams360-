@@ -14,7 +14,8 @@
 }
 
 .edit-button,
-.delete-button {
+.delete-button,
+.view-button {
   width: 100%;
   padding: 12px;
   margin: 10px 0;
@@ -25,12 +26,14 @@
   transition: all 0.3s ease;
 }
 
-.edit-button {
+.edit-button,
+.view-button {
   background-color: #007bff;
   color: white;
 }
 
-.edit-button:hover {
+.edit-button:hover,
+.view-button:hover {
   background-color: #0a71de;
 }
 
@@ -66,7 +69,8 @@
   }
 
   .edit-button,
-  .delete-button {
+  .delete-button,
+  .view-button {
     font-size: 14px; /* Adjust button text size */
     padding: 10px; /* Adjust padding */
   }
@@ -78,7 +82,8 @@
 
 @media (max-width: 480px) {
   .edit-button,
-  .delete-button {
+  .delete-button,
+  .view-button {
     font-size: 14px; /* Smaller font size for very small screens */
     padding: 10px; /* Adjust padding for very small screens */
     margin: 40px 20px;

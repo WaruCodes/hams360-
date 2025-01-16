@@ -6,11 +6,19 @@ const EditCard = () => {
   const navigate = useNavigate();
   const [isDeleted, setIsDeleted] = useState(false);
 
+  // Handle the View button click
+  const handleView = () => {
+    // Redirect to the "R_Table" component (resource table page)
+    navigate('/r-table');
+  };
+
+  //Handle the Edit button click
   const handleEdit = () => {
     // Redirect to the "Mobile Component"
     navigate('/add-card');
   };
 
+  //Handle the delete button click
   const handleDelete = () => {
     // Display confirmation popup for delete action
     const confirmDelete = window.confirm("Are you sure you want to delete this Section?");
@@ -28,7 +36,10 @@ const EditCard = () => {
       {/* Show a message if the card is deleted */}
       {isDeleted && <p>Card has been deleted.</p>}
 
-      {/* Edit and Delete buttons */}
+      {/* View, Edit, and Delete buttons */}
+      <button className="view-button" onClick={handleView}>
+        View
+      </button>
       <button className="edit-button" onClick={handleEdit}>
         Edit
       </button>

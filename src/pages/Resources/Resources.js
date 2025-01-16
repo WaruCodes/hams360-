@@ -151,6 +151,11 @@ const Resources = () => {
     );
   });
 
+    // Handle View button to navigate to R_Table (hospital department table)
+    const handleViewButtonClick = (sectionName) => {
+      navigate(`/view-table/${sectionName}`); // Navigate to R_Table with section as a param
+    };
+
   return (
     <div className="container">
       <h1 className="h1">Resource Section</h1>
