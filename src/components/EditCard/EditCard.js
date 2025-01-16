@@ -1,15 +1,19 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import "./EditCard.css";
 
 const EditCard = () => {
   const navigate = useNavigate();
+  const location = useLocation();
   const [isDeleted, setIsDeleted] = useState(false);
+
+  // Extract section name from location state
+  const sectionName = location.state?.section || '';
 
   // Handle the View button click
   const handleView = () => {
-    // Redirect to the "R_Table" component (resource table page)
-    navigate('/r-table');
+    // Redirect to the "R_Table" component (resource table page) with section name
+    navigate(`/view-table/${sectionName}`);
   };
 
   //Handle the Edit button click

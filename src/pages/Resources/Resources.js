@@ -8,124 +8,122 @@ import EditCard from "../../components/EditCard/EditCard";
 const Resources = () => {
   const [images, setImages] = useState([
     // your image data...
-    
-{ 
-  id: 1, 
-  src: Image,
-  name: "Miss Rasika Wedaarachchi", 
-  section: "Dental" 
-},
-{ 
-  id: 2, 
-  src: Image, 
-  name: "Miss Rashmi Warushika", 
-  section: "Ward No:1" 
-},
-{ 
-  id: 3, 
-  src: Image, 
-  name: "Miss Sampawi Kangayan", 
-  section: "Ward No:2" 
-},
-{ 
-  id: 4, 
-  src: Image, 
-  name: "Mr sorubaraj Kangeyan", 
-  section: "Ward No:3" 
-},
-{ 
-  id: 5, 
-  src: Image, 
-  name: "Mr Geenoth Wickramasooriya", 
-  section: "Ward No:4"
- },
-{ 
-  id: 6, 
-  src: Image, 
-  name: "Image 6", 
-  section: "Section 1" 
-},
-{ 
-  id: 7, 
-  src: Image, 
-  name: "Image 7", 
-  section: "Section 3" 
-},
-{ 
-  id: 8, 
-  src: Image, 
-  name: "Image 8", 
-  section: "Section 2" 
-},
-{ id: 9, 
-  src: Image, 
-  name: "Image 9", 
-  section: "Section 1" 
-},
-{ id: 10, 
-  src: Image, 
-  name: "Image 10", 
-  section: "Section 3" 
-},
-{ 
-  id: 11, 
-  src: Image, 
-  name: "Image 11", 
-  section: "Section 2" 
-},
-{ 
-  id: 12, 
-  src: Image, 
-  name: "Image 12", 
-  section: "Section 1" 
-},
-{ 
-  id: 13, 
-  src: Image, 
-  name: "Image 13", 
-  section: "Section 3" 
-},
-{ 
-  id: 14, 
-  src: Image, 
-  name: "Image 14", 
-  section: "Section 2" 
-},
-{ 
-  id: 15, 
-  src: Image, 
-  name: "Image 15", 
-  section: "Section 1" 
-},
-{ 
-  id: 16, 
-  src: Image, 
-  name: "Image 16", 
-  section: "Section 3" 
-},
-{ 
-  id: 17, 
-  src: Image, 
-  name: "Image 17", 
-  section: "Section 2" 
-},
-{ 
-  id: 18, 
-  src: Image, 
-  name: "Image 18", 
-  section: "Section 1" 
-},
-{ 
-  id: 19, 
-  src: Image, 
-  name: "Image 19",
-  section: "Section 3" 
-},
-{ 
-  id: 20, 
-  src: Image, 
-  name: "Image 20", section: "Section 2" },
-]);
+    { 
+      id: 1, 
+      src: Image,
+      name: "Miss Rasika Wedaarachchi", 
+      section: "Dental" 
+    },
+    { 
+      id: 2, 
+      src: Image, 
+      name: "Miss Rashmi Warushika", 
+      section: "Ward No:1" 
+    },
+    { 
+      id: 3, 
+      src: Image, 
+      name: "Miss Sampawi Kangayan", 
+      section: "Ward No:2" 
+    },
+    { 
+      id: 4, 
+      src: Image, 
+      name: "Mr sorubaraj Kangeyan", 
+      section: "Ward No:3" 
+    },
+    { 
+      id: 5, 
+      src: Image, 
+      name: "Mr Geenoth Wickramasooriya", 
+      section: "Ward No:4"
+    },
+    { 
+      id: 6, 
+      src: Image, 
+      name: "Image 6", 
+      section: "Section 1" 
+    },
+    { 
+      id: 7, 
+      src: Image, 
+      name: "Image 7", 
+      section: "Section 3" 
+    },
+    { 
+      id: 8, 
+      src: Image, 
+      name: "Image 8", 
+      section: "Section 2" 
+    },
+    { id: 9, 
+      src: Image, 
+      name: "Image 9", 
+      section: "Section 1" 
+    },
+    { id: 10, 
+      src: Image, 
+      name: "Image 10", section: "Section 3" 
+    },
+    { 
+      id: 11, 
+      src: Image, 
+      name: "Image 11", 
+      section: "Section 2" 
+    },
+    { 
+      id: 12, 
+      src: Image, 
+      name: "Image 12", 
+      section: "Section 1" 
+    },
+    { 
+      id: 13, 
+      src: Image, 
+      name: "Image 13", 
+      section: "Section 3" 
+    },
+    { 
+      id: 14, 
+      src: Image, 
+      name: "Image 14", 
+      section: "Section 2" 
+    },
+    { 
+      id: 15, 
+      src: Image, 
+      name: "Image 15", 
+      section: "Section 1" 
+    },
+    { 
+      id: 16, 
+      src: Image, 
+      name: "Image 16", 
+      section: "Section 3" 
+    },
+    { 
+      id: 17, 
+      src: Image, 
+      name: "Image 17", 
+      section: "Section 2" 
+    },
+    { 
+      id: 18, 
+      src: Image, 
+      name: "Image 18", 
+      section: "Section 1" 
+    },
+    { 
+      id: 19, 
+      src: Image, 
+      name: "Image 19",
+      section: "Section 3" 
+    },
+    { 
+      id: 20, 
+      src: Image, 
+      name: "Image 20", section: "Section 2" },
+  ]);
  
 
   const [showAll, setShowAll] = useState(false);
