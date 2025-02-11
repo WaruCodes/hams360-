@@ -174,7 +174,7 @@ const Resources = () => {
           <div
             key={image.id}
             className="card"
-            onClick={() => handleCardClick(image.id)} // Card click triggers redirection
+            onClick={() => handleCardClick(image.id)} 
           >
             <img src={image.src} alt={image.name} className="grid_image" />
             <p className="p1">{image.name}</p>
