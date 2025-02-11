@@ -27,10 +27,10 @@ const EditCard = () => {
     // Display confirmation popup for delete action
     const confirmDelete = window.confirm("Are you sure you want to delete this Section?");
     if (confirmDelete) {
-      // Perform delete operation here (you may want to update the state or call API)
+     
       setIsDeleted(true);
       alert('Section has been deleted successfully!');
-      // Optionally, navigate away after deletion (e.g., back to resources)
+    
       navigate('/resources');
     }
   };
