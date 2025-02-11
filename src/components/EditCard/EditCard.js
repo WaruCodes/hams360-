@@ -18,7 +18,7 @@ const EditCard = () => {
 
   //Handle the Edit button click
   const handleEdit = () => {
-    // Redirect to the "Mobile Component"
+   
     navigate('/add-card');
   };
 
