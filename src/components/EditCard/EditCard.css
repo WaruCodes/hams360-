@@ -85,7 +85,7 @@
   .delete-button,
   .view-button {
     font-size: 14px; /* Smaller font size for very small screens */
-    padding: 10px; /* Adjust padding for very small screens */
+    padding: 10px; 
     margin: 40px 20px;
   }
 
