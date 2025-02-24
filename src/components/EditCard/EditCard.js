@@ -40,7 +40,6 @@ const EditCard = () => {
       {/* Show a message if the card is deleted */}
       {isDeleted && <p>Card has been deleted.</p>}
 
-      {/* View, Edit, and Delete buttons */}
       <button className="view-button" onClick={handleView}>
         View
       </button>
