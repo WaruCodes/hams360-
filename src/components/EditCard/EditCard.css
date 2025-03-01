@@ -79,12 +79,12 @@
     font-size: 12px; /* Adjust alert font size */
   }
 }
-
+//
 @media (max-width: 480px) {
   .edit-button,
   .delete-button,
   .view-button {
-    font-size: 14px; /* Smaller font size for very small screens */
+    font-size: 14px; 
     padding: 10px; 
     margin: 40px 20px;
   }
